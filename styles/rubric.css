@@ -1,0 +1,122 @@
+.products-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 10px;
+    column-gap: 10px;
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    right: 5%;
+}
+
+@media (max-width: 750px) {
+    .products-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+}
+
+@media (min-width: 1000px){
+    .products-grid{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 1250px){
+    .products-grid{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 1500px){
+    .products-grid{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+}
+
+.product-container {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 20px;
+    justify-content: space-between;
+    border: 2px solid lightgray;
+    border-radius: 5px;
+}
+
+.product-img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    width: 100%;
+}
+
+.product-img-container img {
+    width: 100%;
+}
+
+.product-name-container {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.product-rating-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 10px 0;
+}
+
+.product-rating-container img {
+    height: 20px;
+}
+
+.product-price {
+    font-weight: bold;
+    padding: 5px 0;
+}
+
+.product-quantity-container {
+    margin-bottom: 20px;
+}
+
+.js-quantity-selector {
+    border-radius: 8px;
+    padding: 3px 5px;
+    font-size: 15px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(213, 217, 217, 0.5);
+}
+
+.js-quantity-selector:focus {
+    border: 2px solid rgb(255, 153, 0);
+}
+
+
+.added-to-cart-message {
+    display: none;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.add-to-cart-button {
+    height: 50px;
+    padding: 8px;
+    border-radius: 50px;
+    margin-top: 10px;
+}
+
+.your-cart-is-empty-container {
+   width: 10px;
+}
+
+.your-cart-is-empty-container a {
+    display: block;
+    width: fit-content;
+}
+
+.is-not-hidden {display: flex;}

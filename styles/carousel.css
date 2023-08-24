@@ -1,0 +1,111 @@
+.main-carousel {
+    height: 2000px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    margin: 90px auto;
+}
+
+.carousel__image {
+    width: 100%;
+    height: 40%;
+    object-fit: cover;
+}
+
+.carousel__track {
+    position: relative;
+
+}
+
+.fade-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Adjust the height of the fading overlay */
+    background: linear-gradient(to top, lightgray, transparent);
+  }
+
+.carousel__track-container {
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.carousel__track {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+    height: 100%;
+    transition: transform 250ms ease-in;
+}
+
+.carousel__slide {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
+.carousel__button {
+    all: unset;
+    position: absolute;
+    top: 10%;
+    transform: translateY(-50%);
+    height: 100px;
+    background-color: transparent; 
+    transition: all 200ms;
+    
+    cursor: pointer;
+
+    z-index: 3;
+
+}
+
+.carousel__button:hover {
+    background-color: rgba(225, 225, 225, 0.5);
+    border-radius: 2px;
+    border: solid;
+    border-width: 1px;
+    border-color: white;
+}
+
+
+.carousel__button--left {
+    left: 0;
+}
+
+.carousel__button--right {
+    right: 0;
+}
+
+.carousel__button img {
+    width: 40px;
+}
+
+.carousel__nav {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    gap: 8px;
+}
+
+.carousel__indicator {
+    border: 0;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    background-color: rgba(0, 0, 0, .3);
+    margin: 0 12px;
+    cursor: pointer;
+}
+
+.carousel__indicator.current-slide {
+    background-color: rgba(0, 0, 0, .75);
+}
+
+.is-hidden {display: none;}

@@ -1,0 +1,159 @@
+.page-title {
+    font-weight: 700;
+    font-size: 22px;
+    margin-bottom: 18px;
+}
+
+.checkout-grid {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 1fr 350px;
+    column-gap: 12px;
+    align-items: start;
+}
+
+.cart-summary {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.cart-items-container,
+.payment-summary {
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    padding: 30px;
+}
+
+
+.delivery-date {
+    color: rgb(0, 118, 0);
+    font-weight: 700;
+    font-size: 19px;
+    margin-top: 5px;
+    margin-bottom: 22px;
+}
+
+.cart-items-details-grid {
+    display: grid;
+    grid-template-columns: 100px 1fr 1fr;
+    column-gap: 25px;
+}
+
+.product-name {
+    font-size: 19px;
+    font-weight: 700;
+}
+
+.product-price {
+    color:rgb(200, 22, 22);
+    font-weight: 700;
+}
+
+.product-img {
+    max-width: 100%;
+    max-height: 120px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.delivery-options-title {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.delivery-options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.delivery-option {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.delivery-option-date {
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(0, 118, 0)
+}
+
+.delivery-option-price {
+    color: rgb(120, 120, 120);
+}
+
+.your-cart-is-empty {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.checkout-button {
+    padding: 10px;
+    border-radius: 7px;
+    font-size: 17px;
+}
+
+.payment-summary-title {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+.payment-summary-row {
+    display: grid;
+    grid-template-columns: 100px 40px;
+    column-gap: 50%;
+    padding-bottom: 12px;
+    white-space: nowrap;
+}
+
+.subtotal-row {
+    padding-top: 10px;
+    align-items: center;
+}
+
+.total-row {
+    margin-top: 10px;
+    border-top: 2px solid lightgray;
+    padding: 5px 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(177, 39, 4);
+}
+
+.paypal-toggle {
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+}
+
+.js-paypal-toggle {
+    margin-left: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+.checkout-order-button {
+    padding: 15px;
+    border-radius: 7px;
+    font-size: 17px;
+    width: 100%;
+    color: rgb(33, 33, 33);
+    background-color: rgba(255, 216, 20, 1);
+    border: 1px solid rgba(252, 210, 0, 1);
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(213, 217, 217, 0.5);
+}
+
+.is {
+    background-color: rgba(255, 216, 20, 0.5);
+}
+
+.new-quantity-input {
+    width: 40px;
+    height: 25px;
+    border-radius: 2px;
+    border: 2px solid rgb(144, 142, 142)
+}
+

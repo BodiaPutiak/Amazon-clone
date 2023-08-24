@@ -1,0 +1,44 @@
+.main-page-content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 50px;
+    column-gap: 50px;
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    right: 5%;
+
+    z-index: 4;
+}
+
+.products-subsection {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    background-color: white;
+    
+}
+
+
+
+.products-subsection img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: 0 auto 20px;
+}
+
+.products-subsection h3 {
+    margin-left: 20px;
+    white-space: nowrap;
+}
+
+.shop-now {
+    margin: 0 0 20px 0;
+}
+
+.image-anchor {
+    display: block;
+    width: fit-content;
+}
